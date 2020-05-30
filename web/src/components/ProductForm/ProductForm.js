@@ -19,6 +19,7 @@ const CSS = {
 
 const ProductForm = (props) => {
   const onSubmit = (data) => {
+    data.price = parseFloat(data.price)
     props.onSave(data, props?.product?.id)
   }
 
