@@ -58,6 +58,7 @@ const ProductForm = (props) => {
         </Label>
         <TextField
           name="price"
+          type="number"
           defaultValue={props.product?.price}
           className={CSS.input}
           errorClassName={CSS.inputError}
